@@ -134,7 +134,7 @@ p {
 
 /* Reduced padding for more compact, corporate look */
 section {
-    padding: clamp(3rem, 5vw, 4.5rem) 0;
+    padding: clamp(2rem, 5vw, 4.5rem) 0;
 }
 
 .section-dark {
@@ -476,10 +476,10 @@ section {
     gap: 1.5rem;
 }
 
-@media (min-width: 992px) {
+@media (min-width: 480px) {
     .sobre-grid {
         grid-template-columns: 1fr 1fr;
-        gap: 2rem;
+        gap: 1.5rem;
         align-items: center;
     }
 }
@@ -539,9 +539,10 @@ section {
     gap: 1.5rem;
 }
 
-@media (min-width: 768px) {
+@media (min-width: 480px) {
     .services-grid {
         grid-template-columns: repeat(2, 1fr);
+        gap: 1rem;
     }
 }
 
