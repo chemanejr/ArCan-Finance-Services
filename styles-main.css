@@ -81,8 +81,8 @@ h1 {
 }
 
 .hero h1 {
-    line-height: 1.3;
-    margin-bottom: 1.5rem;
+    line-height: 1.2;
+    margin-bottom: 0.75rem;
 }
 
 .fw-bold {
@@ -134,7 +134,7 @@ p {
 
 /* Reduced padding for more compact, corporate look */
 section {
-    padding: clamp(5rem, 8vw, 8rem) 0;
+    padding: clamp(3rem, 5vw, 4.5rem) 0;
 }
 
 .section-dark {
@@ -411,10 +411,10 @@ section {
    ========================================================================== */
 .hero {
     position: relative;
-    padding-top: calc(100px + clamp(5rem, 8vw, 8rem));
-    padding-bottom: clamp(5rem, 10vw, 8rem);
+    padding-top: calc(80px + clamp(3rem, 5vw, 4rem));
+    padding-bottom: clamp(3rem, 5vw, 4rem);
     background: radial-gradient(circle at 70% 30%, #001A33 0%, #051937 100%);
-    min-height: 85vh;
+    min-height: 60vh;
     display: flex;
     align-items: center;
     overflow: hidden;
@@ -456,9 +456,9 @@ section {
 }
 
 .hero-subtext {
-    font-size: 1.15rem;
-    margin-bottom: 2.5rem;
-    line-height: 1.7;
+    font-size: 1.05rem;
+    margin-bottom: 1.5rem;
+    line-height: 1.6;
 }
 
 .hero-ctas {
@@ -473,13 +473,13 @@ section {
 .sobre-grid {
     display: grid;
     grid-template-columns: 1fr;
-    gap: 3rem;
+    gap: 1.5rem;
 }
 
 @media (min-width: 992px) {
     .sobre-grid {
         grid-template-columns: 1fr 1fr;
-        gap: 4rem;
+        gap: 2rem;
         align-items: center;
     }
 }
@@ -504,9 +504,8 @@ section {
 .stats-grid {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    gap: 2rem;
-    padding: 2rem;
-    border-radius: 2px;
+    gap: 1.5rem;
+    padding: 0;
 }
 
 .stat-item {
@@ -515,7 +514,7 @@ section {
 
 .stat-number, .stat-plus {
     font-family: var(--font-heading);
-    font-size: clamp(2.5rem, 5vw, 4rem);
+    font-size: clamp(2rem, 4vw, 3rem);
     font-weight: 700;
     color: var(--c-red);
     display: inline-block;
@@ -546,7 +545,7 @@ section {
     }
 }
 
-@media (min-width: 1024px) {
+@media (min-width: 992px) {
     .services-grid {
         grid-template-columns: repeat(3, 1fr);
     }
@@ -555,7 +554,7 @@ section {
 .corporate-card {
     background-color: var(--c-white);
     border: 1px solid var(--c-gray-mid);
-    padding: 2rem;
+    padding: 1.25rem;
     border-top: 3px solid var(--c-navy);
     border-radius: 2px;
     transition: transform 0.2s ease, box-shadow 0.2s ease;
@@ -567,10 +566,10 @@ section {
 }
 
 .service-icon {
-    width: 32px;
-    height: 32px;
+    width: 24px;
+    height: 24px;
     color: var(--c-red);
-    margin-bottom: 1.25rem;
+    margin-bottom: 0.75rem;
 }
 
 .corporate-card h3 {
@@ -605,7 +604,7 @@ section {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    gap: 2rem;
+    gap: 1rem;
 }
 
 .team-card {
@@ -613,8 +612,8 @@ section {
     border: 1px solid var(--c-gray-mid);
     border-radius: 12px;
     text-align: center;
-    flex: 1 1 200px;
-    max-width: 250px;
+    flex: 1 1 160px;
+    max-width: 200px;
     overflow: hidden;
     box-shadow: 0 4px 15px rgba(0,0,0,0.03);
     transition: transform 0.3s ease, box-shadow 0.3s ease;
@@ -644,17 +643,17 @@ section {
 }
 
 .team-info {
-    padding: 1.5rem;
+    padding: 1rem;
 }
 
 .team-card h4 {
     margin-bottom: 0.25rem;
-    font-size: 1.1rem;
+    font-size: 0.95rem;
 }
 
 .team-card .role {
     color: var(--c-gray-text);
-    font-size: 0.85rem;
+    font-size: 0.8rem;
 }
 
 /* ==========================================================================
@@ -663,13 +662,13 @@ section {
 .contact-split {
     display: grid;
     grid-template-columns: 1fr;
-    gap: 3rem;
+    gap: 2rem;
 }
 
 @media (min-width: 992px) {
     .contact-split {
         grid-template-columns: 1fr 1fr;
-        gap: 4rem;
+        gap: 3rem;
         align-items: center;
     }
 }
@@ -775,7 +774,7 @@ footer {
 }
 
 .footer-top {
-    padding: 3rem 0;
+    padding: 1.5rem 0;
 }
 
 .footer-grid {
