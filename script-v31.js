@@ -110,7 +110,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
     // 6. COUNTER ANIMATION
     const counters = document.querySelectorAll('.stat-num');
-    const speed = 200;
+    const speed = 400; // Maior = Mais Lento
 
     const animateCounters = () => {
         counters.forEach(counter => {
@@ -121,7 +121,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
                 if (count < target) {
                     counter.innerText = Math.ceil(count + inc);
-                    setTimeout(updateCount, 10);
+                    setTimeout(updateCount, 30); // Aumentado para 30ms
                 } else {
                     counter.innerText = target;
                 }
