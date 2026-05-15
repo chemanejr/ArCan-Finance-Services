@@ -657,3 +657,32 @@ input:focus, textarea:focus {
     color: var(--c-gray-text);
     max-width: 700px;
 }
+
+/* Mobile Services Grid: 2 Columns */
+@media (max-width: 767px) {
+    .services-grid {
+        grid-template-columns: 1fr 1fr;
+        gap: 1rem;
+    }
+    .service-card {
+        padding: 1.5rem 1rem;
+        border-top-width: 2px;
+    }
+    .service-card h3 {
+        font-size: 1rem;
+        margin-bottom: 1rem;
+    }
+    .card-list {
+        margin: 0.5rem 0;
+    }
+    .card-list li {
+        font-size: 0.75rem;
+        line-height: 1.4;
+        margin-bottom: 0.5rem;
+    }
+    .card-icon {
+        width: 24px;
+        height: 24px;
+        margin-bottom: 1rem;
+    }
+}
