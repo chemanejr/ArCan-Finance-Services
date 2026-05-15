@@ -687,20 +687,22 @@ input:focus, textarea:focus {
     }
 }
 
-/* Center the 5th Pillar on Mobile */
+/* Center all Pillars on Mobile */
 @media (max-width: 767px) {
     .pillars-row {
         grid-template-columns: 1fr 1fr;
         gap: 2rem 1rem;
     }
-    .pillar-item:nth-child(5) {
-        grid-column: span 2;
+    .pillar-item {
         text-align: center;
         margin: 0 auto;
-        max-width: 280px;
     }
-    .pillar-item:nth-child(5) .pillar-num {
+    .pillar-item .pillar-num {
         left: 50%;
         transform: translateX(-50%);
+    }
+    .pillar-item:nth-child(5) {
+        grid-column: span 2;
+        max-width: 280px;
     }
 }
