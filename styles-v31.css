@@ -728,49 +728,58 @@ input:focus, textarea:focus {
     }
 }
 
-/* Enhanced Team Section */
+/* Horizontal Team Scroll */
 #equipa {
-    padding: 10rem 0;
+    padding: 3rem 0;
 }
 
 .team-grid-editorial {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
-    gap: 3rem;
-    margin-top: 3rem;
+    display: flex;
+    gap: 2.5rem;
+    overflow-x: auto;
+    padding-bottom: 2rem;
+    scroll-snap-type: x mandatory;
+    margin-top: 2rem;
+    -webkit-overflow-scrolling: touch;
+}
+
+.team-grid-editorial::-webkit-scrollbar {
+    height: 4px;
+}
+
+.team-grid-editorial::-webkit-scrollbar-thumb {
+    background: var(--c-border);
+    border-radius: 10px;
 }
 
 .team-member-editorial {
+    flex: 0 0 180px;
+    scroll-snap-align: start;
     text-align: center;
 }
 
 .member-image {
-    width: 100%;
-    max-width: 280px;
-    aspect-ratio: 1 / 1.2;
-    margin: 0 auto 1.5rem;
+    width: 140px;
+    height: 140px;
+    margin: 0 auto 1rem;
     overflow: hidden;
     background-color: var(--c-bg-alt);
     border: 1px solid var(--c-border);
+    border-radius: 4px;
 }
 
 .member-image img {
     width: 100%;
     height: 100%;
     object-fit: cover;
-    transition: transform 0.6s cubic-bezier(0.165, 0.84, 0.44, 1);
-}
-
-.team-member-editorial:hover .member-image img {
-    transform: scale(1.08);
 }
 
 .member-role {
     display: block;
     color: var(--c-red);
     font-weight: 700;
-    font-size: 0.8rem;
+    font-size: 0.75rem;
     text-transform: uppercase;
-    letter-spacing: 1.5px;
-    margin-top: 0.5rem;
+    letter-spacing: 1px;
+    margin-top: 0.25rem;
 }
