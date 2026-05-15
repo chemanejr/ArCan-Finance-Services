@@ -452,13 +452,6 @@ section {
     }
     .hero-ctas {
         justify-content: center;
-        flex-direction: column;
-        width: 100%;
-        max-width: 300px;
-        margin: 0 auto;
-    }
-    .hero-ctas .btn {
-        width: 100%;
     }
 }
 
