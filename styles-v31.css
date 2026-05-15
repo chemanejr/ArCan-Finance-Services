@@ -19,7 +19,7 @@
     --font-body: 'Inter', sans-serif;
 
     /* Spacing */
-    --section-padding-top: 5rem;
+    --section-padding-top: 4rem;
     --section-padding-bottom: 3rem;
     --container-max: 1200px;
     --z-nav: 1000;
@@ -643,7 +643,7 @@ input:focus, textarea:focus {
 
 /* Compact Page Intro */
 .page-intro {
-    padding: 5.5rem 0 1rem;
+    padding: 3.75rem 0 1rem;
     border-bottom: 1px solid var(--c-border);
     margin-bottom: 2rem;
 }
