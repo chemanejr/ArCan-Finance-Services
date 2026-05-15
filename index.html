@@ -3,349 +3,511 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>AFS - ArCan Finance Services | Consultoria Financeira</title>
-    <meta name="description" content="A AFS — ArCan Finance Services é uma empresa especializada em outsourcing financeiro, contabilidade, fiscalidade e RH em Moçambique.">
+    <title>AFS — ArCan Finance Services | Consultoria de Excelência</title>
+    <meta name="description" content="A AFS presta serviços de excelência em Contabilidade, Finanças, Fiscalidade, Recursos Humanos e Controlo Interno em Moçambique.">
     
     <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Playfair+Display:wght@600;700;800&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Playfair+Display:wght@600;700;800&display=swap" rel="stylesheet">
     
     <!-- CSS -->
-    <link rel="stylesheet" href="styles-v12.css">
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <!-- Navigation -->
-    <header class="navbar" id="navbar">
-        <div class="nav-container">
-            <div class="logo">
-                <span class="logo-bold">AFS</span>
-                <span class="logo-sub">ArCan Finance Services</span>
+
+    <!-- TOP BAR -->
+    <div class="top-bar">
+        <div class="container top-bar-content">
+            <div class="social-links">
+                <a href="#" aria-label="LinkedIn">IN</a>
+                <a href="#" aria-label="Facebook">FB</a>
+                <a href="#" aria-label="Instagram">IG</a>
             </div>
-            
-            <nav class="desktop-nav">
-                <a href="#inicio" class="nav-link active">Início</a>
-                <a href="#sobre" class="nav-link">Sobre</a>
-                <a href="#servicos" class="nav-link">Serviços</a>
-                <a href="#equipa" class="nav-link">Equipa</a>
-                <a href="#contacto" class="nav-link">Contacto</a>
-            </nav>
-
-            <button class="hamburger" id="hamburger" aria-label="Menu">
-                <span class="line"></span>
-                <span class="line"></span>
-                <span class="line"></span>
-            </button>
-        </div>
-    </header>
-
-    <!-- Mobile Nav Backdrop -->
-    <div class="mobile-nav-backdrop" id="mobile-nav-backdrop"></div>
-
-    <!-- Mobile Nav Overlay -->
-    <div class="mobile-nav" id="mobile-nav">
-        <div class="mobile-nav-header">
-            <div class="user-icon">
-                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" width="24" height="24"><path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"/><circle cx="12" cy="7" r="4"/></svg>
+            <div class="lang-selector">
+                <span>PT</span> | <a href="#">EN</a>
             </div>
-            <button class="close-menu" id="close-menu" aria-label="Close menu">
-                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" width="24" height="24"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg>
-            </button>
         </div>
-        <nav class="mobile-links">
-            <a href="#inicio" class="mobile-link">Início</a>
-            <a href="#sobre" class="mobile-link">Sobre</a>
-            <a href="#servicos" class="mobile-link">Serviços</a>
-            <a href="#equipa" class="mobile-link">Equipa</a>
-            <a href="#contacto" class="mobile-link">Contacto</a>
-        </nav>
     </div>
 
+    <!-- NAVIGATION -->
+    <nav class="navbar" id="navbar">
+        <div class="container">
+            <div class="nav-logo">
+                <a href="index.html">
+                    <span class="logo-main">AFS</span>
+                    <span class="logo-sub">ArCan Finance Services</span>
+                </a>
+            </div>
+            <div class="nav-links">
+                <a href="#inicio" class="nav-link active">Início</a>
+                <a href="#sobre" class="nav-link">Sobre Nós</a>
+                <a href="#servicos" class="nav-link">Serviços</a>
+                <a href="#equipa" class="nav-link">Equipa</a>
+                <a href="#faq" class="nav-link">FAQ</a>
+                <a href="#contacto" class="nav-link">Contacto</a>
+            </div>
+            <button class="hamburger" id="hamburger" aria-label="Menu">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <path d="M3 12h18M3 6h18M3 18h18"/>
+                </svg>
+            </button>
+        </div>
+        <!-- MOBILE MENU OVERLAY -->
+        <div class="mobile-menu" id="mobile-menu">
+            <div class="container">
+                <div class="mobile-links">
+                    <a href="#inicio" class="mobile-link">Início</a>
+                    <a href="#sobre" class="mobile-link">Sobre Nós</a>
+                    <a href="#servicos" class="mobile-link">Serviços</a>
+                    <a href="#equipa" class="mobile-link">Equipa</a>
+                    <a href="#faq" class="mobile-link">FAQ</a>
+                    <a href="#contacto" class="mobile-link">Contacto</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
     <main>
-        <!-- Section 1: Hero -->
-        <section id="inicio" class="hero section-dark">
-            <div class="hero-pattern"></div>
-            <div class="container hero-container">
-                <div class="hero-content">
-                    <span class="overline animate-fade-up delay-1">Consultoria Financeira de Excelência</span>
-                    <h1 class="animate-fade-up delay-2"><span class="fw-bold">Solidez e Confiança</span><br>para o seu Negócio</h1>
-                    <p class="hero-subtext animate-fade-up delay-3">Mais de 16 anos de experiência em Contabilidade, Finanças, Fiscalidade e Recursos Humanos em Moçambique. O parceiro certo para a sua gestão financeira.</p>
-                    <div class="hero-ctas animate-fade-up delay-4">
-                        <a href="#contacto" class="btn btn-primary">Fale Connosco</a>
-                        <a href="#servicos" class="btn btn-secondary">Nossos Serviços</a>
+        <!-- SECTION 1: HERO SLIDER -->
+        <section id="inicio" class="hero-slider" style="padding: 0;">
+            <div class="slide slide-1 active">
+                <div class="container">
+                    <div class="slide-label fade-in">Contabilidade & Finanças</div>
+                </div>
+            </div>
+            <div class="slide slide-2">
+                <div class="container">
+                    <div class="slide-label fade-in">Fiscalidade & Recursos Humanos</div>
+                </div>
+            </div>
+            <div class="slide slide-3">
+                <div class="container">
+                    <div class="slide-label fade-in">Controlo Interno & Outsourcing</div>
+                </div>
+            </div>
+            
+            <div class="slider-nav">
+                <span class="dot active" data-index="0"></span>
+                <span class="dot" data-index="1"></span>
+                <span class="dot" data-index="2"></span>
+            </div>
+        </section>
+
+        <!-- SECTION 2: INTRO BLOCK -->
+        <section class="section-white">
+            <div class="container">
+                <div class="intro-block fade-in">
+                    <p class="intro-text">
+                        A AFS — ArCan Finance Services presta serviços de excelência em Contabilidade, Finanças, Fiscalidade, Recursos Humanos e Controlo Interno em Moçambique. Somos o parceiro estratégico que permite aos gestores focarem-se no crescimento do negócio.
+                    </p>
+                    <div class="service-links">
+                        <a href="#servicos" class="service-link">Contabilidade</a>
+                        <a href="#servicos" class="service-link">Finanças</a>
+                        <a href="#servicos" class="service-link">Fiscalidade</a>
+                        <a href="#servicos" class="service-link">Recursos Humanos</a>
+                        <a href="#servicos" class="service-link">Controlo Interno</a>
                     </div>
                 </div>
             </div>
         </section>
 
-        <!-- Section 2: Sobre & Stats -->
-        <section id="sobre" class="sobre section-light">
+        <!-- SECTION 3: SOBRE NÓS -->
+        <section id="sobre" class="section-white">
             <div class="container">
-                <div class="sobre-grid">
-                    <div class="sobre-text fade-in">
-                        <h2>O seu parceiro estratégico para o crescimento sustentável.</h2>
-                        <p>A AFS — ArCan Finance Services é uma empresa de direito moçambicano especializada em outsourcing financeiro. Permitimos que gestores e empresários foquem no crescimento do negócio enquanto tratamos das áreas críticas de suporte com os mais altos padrões profissionais e éticos.</p>
-                        <div class="value-pillars">
-                            <span class="pillar-chip">Foco no Cliente</span>
-                            <span class="pillar-chip">Excelência</span>
-                            <span class="pillar-chip">Integridade</span>
-                            <span class="pillar-chip">Rigor</span>
-                        </div>
+                <div class="grid-2">
+                    <div class="sobre-img-box fade-in">
+                        <!-- CSS Gradient Pattern -->
                     </div>
-                    <div class="stats-grid fade-in">
-                        <div class="stat-item">
-                            <span class="stat-number" data-target="16">0</span><span class="stat-plus">+</span>
-                            <span class="stat-label">Anos de Experiência</span>
+                    <div class="sobre-content fade-in">
+                        <span class="overline">Sobre a Empresa</span>
+                        <h2>Mais de 16 anos a servir empresas em Moçambique</h2>
+                        <p>A AFS — ArCan Finance Services é uma empresa de direito moçambicano vocacionada na prestação de serviços integrados. Pretendemos apresentar uma resposta de excelência, não se cingindo apenas à relação comercial, mas sim numa relação de parceria com a fidelização e prestação de serviços diferenciados.</p>
+                        <p>O parceiro estratégico que o seu negócio necessita para se manter em crescimento, reduzindo custos e flexibilizando estruturas.</p>
+                        
+                        <div class="stats-row">
+                            <div class="stat-item">
+                                <span class="stat-num">16+</span>
+                                <span class="stat-lab">Anos</span>
+                            </div>
+                            <div class="stat-item">
+                                <span class="stat-num">5</span>
+                                <span class="stat-lab">Serviços</span>
+                            </div>
+                            <div class="stat-item">
+                                <span class="stat-num">4</span>
+                                <span class="stat-lab">Cidades</span>
+                            </div>
                         </div>
-                        <div class="stat-item">
-                            <span class="stat-number" data-target="5">0</span>
-                            <span class="stat-label">Áreas de Serviço</span>
-                        </div>
-                        <div class="stat-item">
-                            <span class="stat-number" data-target="4">0</span>
-                            <span class="stat-label">Cidades</span>
-                        </div>
-                        <div class="stat-item">
-                            <span class="stat-number" data-target="100">0</span><span class="stat-plus">%</span>
-                            <span class="stat-label">Compromisso</span>
-                        </div>
+                        
+                        <a href="#equipa" class="cta-link">Conheça a nossa equipa &rarr;</a>
                     </div>
                 </div>
             </div>
         </section>
 
-        <!-- Section 3: Serviços -->
-        <section id="servicos" class="servicos section-gray">
+        <!-- SECTION 4: NOSSOS SERVIÇOS -->
+        <section id="servicos" class="section-alt">
             <div class="container">
-                <div class="section-header fade-in">
-                    <h2>Áreas de Actuação</h2>
-                    <p class="section-subtitle">Soluções financeiras integradas e adaptadas à realidade da sua empresa.</p>
+                <div class="section-header fade-in" style="text-align: left; margin-bottom: 4rem;">
+                    <span class="overline">Especialidades</span>
+                    <h2>Os Nossos Serviços</h2>
+                    <p style="max-width: 600px;">Soluções integradas de outsourcing financeiro desenhadas para elevar o desempenho global da sua empresa.</p>
                 </div>
                 
                 <div class="services-grid">
-                    <!-- Card 1 -->
-                    <div class="corporate-card fade-in">
-                        <div class="service-icon">
-                            <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M14.5 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V7.5L14.5 2z"/><polyline points="14 2 14 8 20 8"/><line x1="16" y1="13" x2="8" y2="13"/><line x1="16" y1="17" x2="8" y2="17"/><line x1="10" y1="9" x2="8" y2="9"/></svg>
+                    <!-- Service 1 -->
+                    <div class="service-card fade-in">
+                        <div class="card-icon">
+                            <svg viewBox="0 0 24 24" width="32" height="32" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M9 5H7a2 2 0 00-2 2v12a2 2 0 002 2h10a2 2 0 002-2V7a2 2 0 00-2-2h-2M9 5a2 2 0 002 2h2a2 2 0 002-2M9 5a2 2 0 012-2h2a2 2 0 012 2"/>
+                            </svg>
                         </div>
                         <h3>Contabilidade</h3>
-                        <ul>
+                        <ul class="card-list">
                             <li>Processamento contabilístico</li>
+                            <li>Encerramento de contas anuais</li>
                             <li>Relatórios financeiros mensais</li>
-                            <li>Encerramento de contas</li>
                             <li>Consolidação de contas</li>
                         </ul>
+                        <a href="#contacto" class="cta-link">Ver mais &rarr;</a>
                     </div>
-                    
-                    <!-- Card 2 -->
-                    <div class="corporate-card fade-in">
-                        <div class="service-icon">
-                            <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M21.21 15.89A10 10 0 1 1 8 2.83"/><path d="M22 12A10 10 0 0 0 12 2v10z"/></svg>
+
+                    <!-- Service 2 -->
+                    <div class="service-card fade-in">
+                        <div class="card-icon">
+                            <svg viewBox="0 0 24 24" width="32" height="32" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M12 8c-1.657 0-3 .895-3 2s1.343 2 3 2 3 .895 3 2-1.343 2-3 2m0-8c1.11 0 2.08.402 2.599 1M12 8V7m0 1v8m0 0v1m0-1c-1.11 0-2.08-.402-2.599-1M21 12a9 9 0 11-18 0 9 9 0 0118 0z"/>
+                            </svg>
                         </div>
                         <h3>Finanças</h3>
-                        <ul>
-                            <li>Reporting financeiro</li>
+                        <ul class="card-list">
+                            <li>Reporting para a Direcção</li>
+                            <li>Reestruturação interna</li>
                             <li>Estudos de Viabilidade</li>
-                            <li>Elaboração de Orçamentos</li>
-                            <li>Avaliação de empresa (Valuation)</li>
+                            <li>Avaliação de empresas</li>
                         </ul>
+                        <a href="#contacto" class="cta-link">Ver mais &rarr;</a>
                     </div>
 
-                    <!-- Card 3 -->
-                    <div class="corporate-card fade-in">
-                        <div class="service-icon">
-                            <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M3 21h18"/><path d="M4 21v-4"/><path d="M20 21v-4"/><path d="M8 21v-4"/><path d="M12 21v-4"/><path d="M16 21v-4"/><polygon points="12 4 4 17 20 17"/><path d="M12 4v13"/></svg>
+                    <!-- Service 3 -->
+                    <div class="service-card fade-in">
+                        <div class="card-icon">
+                            <svg viewBox="0 0 24 24" width="32" height="32" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M19 21V5a2 2 0 00-2-2H7a2 2 0 00-2 2v16m14 0h2m-2 0h-5m-9 0H3m2 0h5M9 7h1m-1 4h1m4-4h1m-1 4h1m-5 10v-5a1 1 0 011-1h2a1 1 0 011 1v5m-4 0h4"/>
+                            </svg>
                         </div>
                         <h3>Fiscalidade</h3>
-                        <ul>
-                            <li>IVA, IRPS, IRPC</li>
-                            <li>Constituição de empresas</li>
+                        <ul class="card-list">
+                            <li>Optimização de rentabilidade</li>
+                            <li>Apuramento de impostos (IVA, IRPS)</li>
                             <li>Preços de Transferência</li>
-                            <li>Optimização fiscal</li>
+                            <li>Contigência fiscal</li>
                         </ul>
+                        <a href="#contacto" class="cta-link">Ver mais &rarr;</a>
                     </div>
 
-                    <!-- Card 4 -->
-                    <div class="corporate-card fade-in">
-                        <div class="service-icon">
-                            <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M22 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg>
+                    <!-- Service 4 -->
+                    <div class="service-card fade-in">
+                        <div class="card-icon">
+                            <svg viewBox="0 0 24 24" width="32" height="32" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0zm6 3a2 2 0 11-4 0 2 2 0 014 0zM7 10a2 2 0 11-4 0 2 2 0 014 0z"/>
+                            </svg>
                         </div>
                         <h3>Recursos Humanos</h3>
-                        <ul>
+                        <ul class="card-list">
                             <li>Processamento de salários</li>
-                            <li>IRPS e INSS</li>
+                            <li>Gestão de INSS e IRPS</li>
                             <li>Recrutamento especializado</li>
                             <li>Declarações anuais</li>
                         </ul>
+                        <a href="#contacto" class="cta-link">Ver mais &rarr;</a>
                     </div>
 
-                    <!-- Card 5 -->
-                    <div class="corporate-card fade-in">
-                        <div class="service-icon">
-                            <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10"/><path d="m9 12 2 2 4-4"/></svg>
+                    <!-- Service 5 -->
+                    <div class="service-card fade-in">
+                        <div class="card-icon">
+                            <svg viewBox="0 0 24 24" width="32" height="32" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z"/>
+                            </svg>
                         </div>
                         <h3>Controlo Interno</h3>
-                        <ul>
+                        <ul class="card-list">
                             <li>Políticas de controlo</li>
-                            <li>Monitoramento interno</li>
-                            <li>Auditoria Interna (outsourcing)</li>
-                            <li>Melhores práticas financeiras</li>
+                            <li>Monitoramento de riscos</li>
+                            <li>Auditoria Interna</li>
+                            <li>Práticas recomendadas</li>
                         </ul>
+                        <a href="#contacto" class="cta-link">Ver mais &rarr;</a>
+                    </div>
+
+                    <!-- Service 6 -->
+                    <div class="service-card fade-in">
+                        <div class="card-icon">
+                            <svg viewBox="0 0 24 24" width="32" height="32" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M13 10V3L4 14h7v7l9-11h-7z"/>
+                            </svg>
+                        </div>
+                        <h3>Parceria Total</h3>
+                        <ul class="card-list">
+                            <li>Outsourcing integral</li>
+                            <li>Gestão de processos críticos</li>
+                            <li>Apoio estratégico contínuo</li>
+                            <li>Foco no crescimento</li>
+                        </ul>
+                        <a href="#contacto" class="cta-link">Ver mais &rarr;</a>
                     </div>
                 </div>
             </div>
         </section>
 
-        <!-- Section 4: Nossa Equipa & Metodologia -->
-        <section id="equipa" class="equipa section-light">
+        <!-- SECTION 5: MODELO DE NEGÓCIO -->
+        <section class="section-white">
             <div class="container">
-                <div class="section-header fade-in">
-                    <h2>A Nossa Equipa</h2>
-                    <p class="section-subtitle">Liderança e experiência garantindo os mais altos padrões de rigor técnico.</p>
+                <div class="section-header fade-in" style="text-align: center;">
+                    <span class="overline">Valores Centrais</span>
+                    <h2>Como Trabalhamos</h2>
                 </div>
                 
-                <div class="team-grid">
-                    <div class="team-card fade-in">
-                        <div class="team-img-wrapper">
-                            <img src="https://images.unsplash.com/photo-1560250097-0b93528c311a?auto=format&fit=crop&q=80&w=400&h=500" alt="Arnaldo Cananda">
-                        </div>
-                        <div class="team-info">
-                            <h4>Arnaldo Cananda</h4>
-                            <span class="role">Managing Partner</span>
-                        </div>
+                <div class="pillars-row">
+                    <div class="pillar-item fade-in">
+                        <span class="pillar-num">01</span>
+                        <span class="pillar-title">Foco no Cliente</span>
+                        <p>Compreendemos as suas necessidades para superar expectativas e construir fidelidade.</p>
                     </div>
-                    <div class="team-card fade-in">
-                        <div class="team-img-wrapper">
-                            <img src="https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?auto=format&fit=crop&q=80&w=400&h=500" alt="Estâncio Rogério">
-                        </div>
-                        <div class="team-info">
-                            <h4>Estâncio Rogério</h4>
-                            <span class="role">Head of Accountant</span>
-                        </div>
+                    <div class="pillar-item fade-in">
+                        <span class="pillar-num">02</span>
+                        <span class="pillar-title">Busca pela Excelência</span>
+                        <p>Atenção rigorosa aos detalhes para prestar serviços de alta qualidade em todos os aspetos.</p>
                     </div>
-                    <div class="team-card fade-in">
-                        <div class="team-img-wrapper">
-                            <img src="https://images.unsplash.com/photo-1556157382-97eda2d62296?auto=format&fit=crop&q=80&w=400&h=500" alt="Dinís Roque">
-                        </div>
-                        <div class="team-info">
-                            <h4>Dinís Roque</h4>
-                            <span class="role">Head of Tax</span>
-                        </div>
+                    <div class="pillar-item fade-in">
+                        <span class="pillar-num">03</span>
+                        <span class="pillar-title">Promover a Inovação</span>
+                        <p>Antecipamos necessidades e criamos melhores soluções num ambiente de negócios acelerado.</p>
                     </div>
-                    <div class="team-card fade-in">
-                        <div class="team-img-wrapper">
-                            <img src="https://images.unsplash.com/photo-1573497019940-1c28c88b4f3e?auto=format&fit=crop&q=80&w=400&h=500" alt="Elsa de Sousa">
-                        </div>
-                        <div class="team-info">
-                            <h4>Elsa de Sousa</h4>
-                            <span class="role">Head of Human Resources</span>
-                        </div>
+                    <div class="pillar-item fade-in">
+                        <span class="pillar-num">04</span>
+                        <span class="pillar-title">Melhoria Contínua</span>
+                        <p>Avaliamos constantemente o desempenho para aprimorar cada actividade e progredir.</p>
                     </div>
-                    <div class="team-card fade-in">
-                        <div class="team-img-wrapper">
-                            <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=crop&q=80&w=400&h=500" alt="Manuel Simões">
+                    <div class="pillar-item fade-in">
+                        <span class="pillar-num">05</span>
+                        <span class="pillar-title">Integridade e Honestidade</span>
+                        <p>Agimos de forma responsável e comercializamos com integridade absoluta.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- SECTION 6: METODOLOGIA -->
+        <section class="section-alt">
+            <div class="container">
+                <div class="grid-2">
+                    <div class="fade-in">
+                        <span class="overline">Metodologia</span>
+                        <h2>O Nosso Processo</h2>
+                        <p>Seguimos um rigoroso fluxo de trabalho para garantir que cada solução de consultoria seja perfeitamente adaptada à realidade da sua organização.</p>
+                    </div>
+                    <div class="steps-list fade-in">
+                        <div class="step-item" style="margin-bottom: 2rem; border-bottom: 1px solid var(--c-border); padding-bottom: 2rem;">
+                            <h4 style="display: flex; align-items: center; gap: 1.5rem;">
+                                <span style="font-size: 3rem; color: var(--c-red);">1</span>
+                                <div>
+                                    <span style="font-weight: 700; display: block; font-family: var(--font-body);">Diagnóstico</span>
+                                    <span style="font-weight: 400; font-size: 0.9rem; color: var(--c-gray-text);">Análise profunda da situação financeira actual.</span>
+                                </div>
+                            </h4>
                         </div>
-                        <div class="team-info">
-                            <h4>Manuel Simões</h4>
-                            <span class="role">Head of Finance</span>
+                        <div class="step-item" style="margin-bottom: 2rem; border-bottom: 1px solid var(--c-border); padding-bottom: 2rem;">
+                            <h4 style="display: flex; align-items: center; gap: 1.5rem;">
+                                <span style="font-size: 3rem; color: var(--c-red);">2</span>
+                                <div>
+                                    <span style="font-weight: 700; display: block; font-family: var(--font-body);">Plano</span>
+                                    <span style="font-weight: 400; font-size: 0.9rem; color: var(--c-gray-text);">Definição de estratégias e optimização fiscal.</span>
+                                </div>
+                            </h4>
+                        </div>
+                        <div class="step-item">
+                            <h4 style="display: flex; align-items: center; gap: 1.5rem;">
+                                <span style="font-size: 3rem; color: var(--c-red);">3</span>
+                                <div>
+                                    <span style="font-weight: 700; display: block; font-family: var(--font-body);">Execução</span>
+                                    <span style="font-weight: 400; font-size: 0.9rem; color: var(--c-gray-text);">Implementação rigorosa e acompanhamento contínuo.</span>
+                                </div>
+                            </h4>
                         </div>
                     </div>
                 </div>
             </div>
         </section>
 
-        <!-- Section 5: Contacto -->
-        <section id="contacto" class="contacto section-dark">
-            <div class="container contact-split">
-                <div class="contact-info fade-in">
-                    <h2>Agende uma Reunião</h2>
-                    <p>Descubra como podemos optimizar a estrutura financeira da sua empresa.</p>
-                    
-                    <ul class="contact-details">
-                        <li>
-                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path><polyline points="22,6 12,13 2,6"></polyline></svg>
-                            <a href="mailto:info@arcanfinanceservices.com">info@arcanfinanceservices.com</a>
-                        </li>
-                        <li>
-                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path></svg>
-                            <span>+258 87 53 363 31 | +258 82 39 100 42</span>
-                        </li>
-                        <li>
-                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path><circle cx="12" cy="10" r="3"></circle></svg>
-                            <span>Maputo | Beira | Pemba | Gaza</span>
-                        </li>
-                    </ul>
+        <!-- SECTION 7: NOSSA EQUIPA -->
+        <section id="equipa" class="section-white">
+            <div class="container">
+                <div class="section-header fade-in" style="text-align: left;">
+                    <span class="overline">Especialistas</span>
+                    <h2>A Nossa Equipa</h2>
+                    <p>Profissionais com mais de 16 anos de experiência técnica comprovada.</p>
                 </div>
+                
+                <div class="team-grid-editorial" style="display: flex; gap: 2rem; overflow-x: auto; padding-bottom: 2rem; scroll-snap-type: x mandatory;">
+                    <!-- Member 1 -->
+                    <div class="team-member-editorial fade-in" style="flex: 0 0 250px; scroll-snap-align: start;">
+                        <div class="member-avatar" style="width: 80px; height: 80px; border-radius: 50%; background-color: var(--c-navy); color: white; display: flex; justify-content: center; align-items: center; font-size: 1.5rem; font-weight: 700; margin-bottom: 1.5rem;">AC</div>
+                        <h4 style="margin-bottom: 0.25rem;">Arnaldo Cananda</h4>
+                        <span style="color: var(--c-red); font-weight: 600; font-size: 0.85rem; text-transform: uppercase;">Managing Partner</span>
+                    </div>
+                    <!-- Member 2 -->
+                    <div class="team-member-editorial fade-in" style="flex: 0 0 250px; scroll-snap-align: start;">
+                        <div class="member-avatar" style="width: 80px; height: 80px; border-radius: 50%; background-color: var(--c-navy); color: white; display: flex; justify-content: center; align-items: center; font-size: 1.5rem; font-weight: 700; margin-bottom: 1.5rem;">ER</div>
+                        <h4 style="margin-bottom: 0.25rem;">Estâncio Rogério</h4>
+                        <span style="color: var(--c-red); font-weight: 600; font-size: 0.85rem; text-transform: uppercase;">Head of Accountant</span>
+                    </div>
+                    <!-- Member 3 -->
+                    <div class="team-member-editorial fade-in" style="flex: 0 0 250px; scroll-snap-align: start;">
+                        <div class="member-avatar" style="width: 80px; height: 80px; border-radius: 50%; background-color: var(--c-navy); color: white; display: flex; justify-content: center; align-items: center; font-size: 1.5rem; font-weight: 700; margin-bottom: 1.5rem;">DR</div>
+                        <h4 style="margin-bottom: 0.25rem;">Dinís Roque</h4>
+                        <span style="color: var(--c-red); font-weight: 600; font-size: 0.85rem; text-transform: uppercase;">Head of Tax</span>
+                    </div>
+                    <!-- Member 4 -->
+                    <div class="team-member-editorial fade-in" style="flex: 0 0 250px; scroll-snap-align: start;">
+                        <div class="member-avatar" style="width: 80px; height: 80px; border-radius: 50%; background-color: var(--c-navy); color: white; display: flex; justify-content: center; align-items: center; font-size: 1.5rem; font-weight: 700; margin-bottom: 1.5rem;">ES</div>
+                        <h4 style="margin-bottom: 0.25rem;">Elsa de Sousa</h4>
+                        <span style="color: var(--c-red); font-weight: 600; font-size: 0.85rem; text-transform: uppercase;">Head of HR</span>
+                    </div>
+                    <!-- Member 5 -->
+                    <div class="team-member-editorial fade-in" style="flex: 0 0 250px; scroll-snap-align: start;">
+                        <div class="member-avatar" style="width: 80px; height: 80px; border-radius: 50%; background-color: var(--c-navy); color: white; display: flex; justify-content: center; align-items: center; font-size: 1.5rem; font-weight: 700; margin-bottom: 1.5rem;">MS</div>
+                        <h4 style="margin-bottom: 0.25rem;">Manuel Simões</h4>
+                        <span style="color: var(--c-red); font-weight: 600; font-size: 0.85rem; text-transform: uppercase;">Head of Finance</span>
+                    </div>
+                </div>
+            </div>
+        </section>
 
-                <div class="contact-form-container fade-in">
-                    <form id="contactForm" class="contact-form">
-                        <div class="form-row">
+        <!-- SECTION 8: FAQ -->
+        <section id="faq" class="section-white" style="padding-top: 0;">
+            <div class="faq-header fade-in">
+                <div class="container">
+                    <h1>Perguntas Frequentes</h1>
+                    <div class="breadcrumb">Início / FAQ</div>
+                </div>
+            </div>
+            
+            <div class="container">
+                <div class="faq-container">
+                    <div class="faq-item fade-in">
+                        <h4>Quais são as principais áreas de atuação da AFS?</h4>
+                        <p>Atuamos em Contabilidade, Finanças, Fiscalidade, Recursos Humanos e Controlo Interno, providenciando uma gestão integral de outsourcing financeiro.</p>
+                    </div>
+                    <div class="faq-item fade-in">
+                        <h4>Como a AFS ajuda na redução de custos da minha empresa?</h4>
+                        <p>Através da flexibilização das suas estruturas e optimização da rentabilidade fiscal, permitindo que a sua equipa se concentre no core business.</p>
+                    </div>
+                    <div class="faq-item fade-in">
+                        <h4>A AFS trabalha com empresas em que cidades moçambicanas?</h4>
+                        <p>Temos presença física e capacidade de atendimento em Maputo, Beira, Pemba e Gaza.</p>
+                    </div>
+                    <div class="faq-item fade-in">
+                        <h4>O que diferencia a AFS de outras consultoras financeiras?</h4>
+                        <p>A nossa relação de parceria estratégica e o compromisso inabalável com a integridade, inovação e excelência em todos os detalhes técnicos.</p>
+                    </div>
+                    <div class="faq-item fade-in">
+                        <h4>Como funciona o processo de início de consultoria?</h4>
+                        <p>Iniciamos com um diagnóstico profundo, seguido da definição de um plano estratégico e, por fim, a execução rigorosa com acompanhamento mensal.</p>
+                    </div>
+                    <div class="faq-item fade-in">
+                        <h4>A AFS faz processamento de salários e gestão de INSS?</h4>
+                        <p>Sim, somos especialistas em processamento de payroll, cálculo de IRPS e INSS, garantindo total conformidade legal para a sua empresa.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- SECTION 9: CONTACTO -->
+        <section id="contacto" class="section-white" style="border-top: 1px solid var(--c-border);">
+            <div class="container">
+                <div class="contact-grid">
+                    <div class="contact-info fade-in">
+                        <span class="overline">Contacte-nos</span>
+                        <h2 style="font-size: 2.5rem; margin-bottom: 2.5rem;">Vamos conversar sobre o seu negócio.</h2>
+                        
+                        <div style="margin-bottom: 2rem;">
+                            <h4 style="font-family: var(--font-body); font-weight: 700; margin-bottom: 0.5rem;">AFS — ArCan Finance Services</h4>
+                            <p>info@arcanfinanceservices.com</p>
+                            <p>+258 87 53 363 31</p>
+                            <p>+258 82 39 100 42</p>
+                        </div>
+                        
+                        <div>
+                            <h4 style="font-family: var(--font-body); font-weight: 700; margin-bottom: 0.5rem;">Presença Nacional</h4>
+                            <p>Maputo | Beira | Pemba | Gaza</p>
+                        </div>
+                    </div>
+                    
+                    <div class="contact-form fade-in">
+                        <h4 style="font-family: var(--font-body); font-weight: 700; margin-bottom: 2rem;">Entre em Contacto</h4>
+                        <form id="contact-form">
                             <div class="form-group">
-                                <input type="text" id="name" placeholder="Nome" required>
+                                <input type="text" placeholder="Nome Completo" required>
                             </div>
                             <div class="form-group">
-                                <input type="text" id="company" placeholder="Empresa">
+                                <input type="email" placeholder="Endereço de E-mail" required>
                             </div>
-                        </div>
-                        <div class="form-group">
-                            <input type="email" id="email" placeholder="E-mail" required>
-                        </div>
-                        <div class="form-group">
-                            <select id="service" required>
-                                <option value="" disabled selected>Serviço de interesse</option>
-                                <option value="contabilidade">Contabilidade</option>
-                                <option value="financas">Finanças</option>
-                                <option value="fiscalidade">Fiscalidade</option>
-                                <option value="rh">Recursos Humanos</option>
-                                <option value="controlo">Controlo Interno</option>
-                            </select>
-                        </div>
-                        <div class="form-group">
-                            <textarea id="message" rows="3" placeholder="Mensagem" required></textarea>
-                        </div>
-                        <button type="submit" class="btn btn-primary submit-btn">Enviar Mensagem</button>
-                        <div class="form-success" id="formSuccess">Mensagem enviada com sucesso.</div>
-                    </form>
+                            <div class="form-group">
+                                <select required>
+                                    <option value="" disabled selected>Assunto / Serviço</option>
+                                    <option value="contabilidade">Contabilidade</option>
+                                    <option value="financas">Finanças</option>
+                                    <option value="fiscalidade">Fiscalidade</option>
+                                    <option value="rh">Recursos Humanos</option>
+                                    <option value="outro">Outro</option>
+                                </select>
+                            </div>
+                            <div class="form-group">
+                                <textarea rows="5" placeholder="Sua Mensagem" required></textarea>
+                            </div>
+                            <button type="submit" class="btn-submit">Enviar Mensagem</button>
+                        </form>
+                    </div>
                 </div>
             </div>
         </section>
     </main>
 
-    <!-- Footer -->
-    <footer>
-        <div class="footer-top">
-            <div class="container footer-grid">
-                <div class="footer-brand">
-                    <div class="logo">
-                        <span class="logo-bold">AFS</span>
-                    </div>
-                    <p class="tagline">Rigor e Excelência Financeira em Moçambique.</p>
+    <!-- FOOTER -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="nav-logo">
+                    <a href="index.html">
+                        <span class="logo-main" style="color: white;">AFS</span>
+                        <span class="logo-sub" style="color: white;">ArCan Finance Services</span>
+                    </a>
                 </div>
                 <div class="footer-links">
                     <a href="#inicio">Início</a>
-                    <a href="#sobre">Sobre</a>
+                    <a href="#sobre">Sobre Nós</a>
                     <a href="#servicos">Serviços</a>
                     <a href="#equipa">Equipa</a>
-                </div>
-                <div class="footer-contact">
-                    <p>info@arcanfinanceservices.com</p>
-                    <p>+258 87 53 363 31</p>
+                    <a href="#faq">FAQ</a>
+                    <a href="#contacto">Contacto</a>
                 </div>
             </div>
-        </div>
-        <div class="footer-bottom">
-            <div class="container">
-                <p>&copy; 2025 ArCan Finance Services. Todos os direitos reservados.</p>
+            <div class="footer-bottom">
+                <p>&copy; 2026 ArCan Finance Services. Todos os direitos reservados.</p>
+                <p style="margin-top: 0.5rem; letter-spacing: 2px; font-weight: 600;">MAPUTO · BEIRA · PEMBA · GAZA</p>
             </div>
         </div>
     </footer>
 
-    <!-- Floating Elements (Kept minimal) -->
-    <a href="https://wa.me/258875336331" class="floating-whatsapp" target="_blank" aria-label="WhatsApp">
-        <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="white" stroke="white" stroke-width="0" stroke-linecap="round" stroke-linejoin="round"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.888-.788-1.487-1.761-1.66-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51a12.8 12.8 0 0 0-.57-.01c-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 0 1-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 0 1-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 0 1 2.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0 0 12.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 0 0 5.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 0 0-3.48-8.413Z"/></svg>
+    <a href="https://wa.me/258875336331" class="wa-float" id="whatsapp-btn" target="_blank">
+        <svg viewBox="0 0 24 24" width="32" height="32" fill="currentColor">
+            <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L0 24l6.335-1.662c1.72.938 3.659 1.435 5.631 1.435h.008c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413Z"/>
+        </svg>
     </a>
 
     <!-- JS -->
-    <script src="script-v12.js"></script>
+    <script src="script.js"></script>
 </body>
 </html>
