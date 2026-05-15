@@ -19,7 +19,7 @@
     --font-body: 'Inter', sans-serif;
 
     /* Spacing */
-    --section-padding: clamp(4rem, 10vw, 8rem);
+    --section-padding: clamp(1.5rem, 5vw, 3rem);
     --container-max: 1200px;
     --z-nav: 1000;
 }
@@ -130,8 +130,8 @@ section {
 .top-bar {
     background-color: var(--c-topbar);
     color: white;
-    padding: 8px 0;
-    font-size: 0.75rem;
+    padding: 4px 0;
+    font-size: 0.7rem;
 }
 
 .top-bar-content {
@@ -151,7 +151,7 @@ section {
 
 .navbar {
     background-color: var(--c-white);
-    padding: 2rem 0;
+    padding: 1rem 0;
     transition: all 0.3s ease;
     border-bottom: 1px solid transparent;
     position: relative;
@@ -630,25 +630,12 @@ input:focus, textarea:focus {
     transform: translateY(0);
 }
 
-/* Floating WhatsApp */
-.wa-float {
-    position: fixed;
-    bottom: 2rem;
-    right: 2rem;
-    width: 60px;
-    height: 60px;
-    background-color: #25D366;
-    border-radius: 50%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    color: white;
-    box-shadow: 0 4px 20px rgba(0,0,0,0.15);
-    z-index: 1000;
-    opacity: 0;
-    transition: opacity 0.3s ease;
+/* Hide Banner explicitly to fix cache issues */
+.subpage-banner {
+    display: none !important;
 }
 
-.wa-float.visible {
-    opacity: 1;
+/* Subpage Active Link adjustment */
+.nav-link.active {
+    border-bottom: 2px solid var(--c-red);
 }
