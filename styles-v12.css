@@ -503,16 +503,10 @@ section {
 
 .stats-grid {
     display: grid;
-    grid-template-columns: 1fr;
+    grid-template-columns: repeat(2, 1fr);
     gap: 2rem;
     padding: 2rem;
     border-radius: 2px;
-}
-
-@media (min-width: 576px) {
-    .stats-grid {
-        grid-template-columns: repeat(2, 1fr);
-    }
 }
 
 .stat-item {
