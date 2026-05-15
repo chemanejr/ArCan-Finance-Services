@@ -107,3 +107,39 @@ document.addEventListener('DOMContentLoaded', () => {
     }
 
 });
+
+    // 6. COUNTER ANIMATION
+    const counters = document.querySelectorAll('.stat-num');
+    const speed = 200;
+
+    const animateCounters = () => {
+        counters.forEach(counter => {
+            const updateCount = () => {
+                const target = +counter.getAttribute('data-target');
+                const count = +counter.innerText;
+                const inc = target / speed;
+
+                if (count < target) {
+                    counter.innerText = Math.ceil(count + inc);
+                    setTimeout(updateCount, 10);
+                } else {
+                    counter.innerText = target;
+                }
+            };
+            updateCount();
+        });
+    };
+
+    // Intersection Observer for Counters
+    const counterObserver = new IntersectionObserver((entries) => {
+        entries.forEach(entry => {
+            if (entry.isIntersecting) {
+                animateCounters();
+                counterObserver.unobserve(entry.target);
+            }
+        });
+    }, { threshold: 0.5 });
+
+    if (counters.length > 0) {
+        counterObserver.observe(document.querySelector('.stats-row'));
+    }

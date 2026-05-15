@@ -706,3 +706,24 @@ input:focus, textarea:focus {
         max-width: 280px;
     }
 }
+
+/* Stats & Counter Animation Styles */
+.stat-num, .stat-suffix {
+    display: inline-block;
+    font-size: 2.5rem;
+    font-weight: 700;
+    color: var(--c-navy);
+    font-family: var(--font-body);
+}
+
+@media (max-width: 767px) {
+    .stats-row {
+        display: grid !important;
+        grid-template-columns: 1fr 1fr;
+        gap: 2rem;
+        text-align: center;
+    }
+    .stat-item {
+        margin-bottom: 0;
+    }
+}
